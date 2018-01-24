@@ -1,0 +1,776 @@
+* {
+  font-family: "Oswald", "Noto Sans TC";
+}
+
+html, body {
+  overflow-x: hidden;
+  font-size: 16px;
+  background-image: url(https://jyun886.github.io/test/bg_patten_01.png);
+}
+
+header {
+  position: relative;
+  background-color: #111820;
+  text-align: center;
+  height: 926px;
+  background-image: url(https://jyun886.github.io/test/bg_patten_01.png);
+}
+header .Logoicon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 250px;
+  padding: 250px 0px;
+}
+header .marginbottom {
+  position: relative;
+  height: 885px;
+  bottom: -50px;
+  right: 810px;
+  z-index: 0;
+}
+header .explore {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #f5d061;
+  top: 75%;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+header .explore:after {
+  display: block;
+  content: "v";
+  -webkit-transform: scaleX(1.2) scaleY(0.5);
+          transform: scaleX(1.2) scaleY(0.5);
+}
+header .explore.at_top {
+  opacity: 1;
+}
+
+nav.navbar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav.navbar a {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav.navbar.at_top {
+  background-color: transparent;
+}
+nav.navbar.at_top a, nav.navbar.at_top a:visited {
+  color: white;
+}
+
+section {
+  padding: 60px;
+  position: relative;
+}
+
+section#section_about {
+  height: 2620px;
+  background-color: #fc4513;
+  background-repeat: no-repeat;
+  background-position: top center;
+  overflow: hidden;
+}
+section#section_about .container#about_pic1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 608px;
+  height: 426px;
+  margin-top: -760px;
+  margin-left: 280px;
+}
+section#section_about .container#about_pic2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 582px;
+  height: 206px;
+  margin-top: 460px;
+  margin-left: 180px;
+}
+section#section_about .container#about_pic3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 562px;
+  height: 394px;
+  margin-top: 1020px;
+  margin-left: 335px;
+}
+section#section_about .container#about_main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 1264px;
+  height: 2333px;
+  margin-left: -20px;
+  margin-top: -45px;
+}
+section#section_about .container_rotate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  width: 946px;
+  height: 1300px;
+  z-index: 0;
+}
+section#section_about .container_rotate .a_c_grop {
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+}
+section#section_about .container_rotate .a_c_grop .bg_design_01 {
+  position: absolute;
+  top: -500px;
+  width: 350px;
+  left: 690px;
+}
+section#section_about .container_rotate .a_c_grop .bg_design_02 {
+  position: absolute;
+  top: 470px;
+  width: 850px;
+  left: 390px;
+}
+section#section_about .container_rotate .a_c_grop .bg_design_03 {
+  position: absolute;
+  top: -400px;
+  width: 350px;
+  right: -460px;
+}
+section#section_about .container_rotate .a_c_grop .bg_design_04 {
+  position: absolute;
+  top: 420px;
+  width: 90px;
+  left: -325px;
+}
+section#section_about .container_rotate .a_c_grop .bg_l_01 {
+  opacity: 0.4;
+  position: absolute;
+  top: -110px;
+  left: -650px;
+  width: 1800px;
+}
+section#section_about .container_rotate .a_c_grop .bg_l_02 {
+  opacity: 0.4;
+  position: absolute;
+  top: 70px;
+  left: -610px;
+  width: 1650px;
+}
+
+section#section_08online {
+  position: relative;
+  height: 1210px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section#section_08online .space_div {
+  height: 294px;
+  background-image: url(https://jyun886.github.io/images/kouhao_02.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section#section_08online .container#feature {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 1365px;
+  height: 921px;
+  background-image: url(https://jyun886.github.io/images/section_featured_08.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section#section_08online .bottom_div {
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(220, 220, 200, 0.05);
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 450px;
+  margin-left: 230px;
+  width: 803px;
+  height: 363px;
+  border-radius: 20px;
+}
+section#section_08online .orange_div {
+  z-index: 0;
+  position: absolute;
+  bottom: 42px;
+  height: 306px;
+  width: 100%;
+  background-color: #fc4513;
+}
+
+section#section_BarvoOnline {
+  margin-top: -42px;
+  height: 1068px;
+  padding: 0;
+}
+section#section_BarvoOnline .space_div {
+  height: 194px;
+}
+section#section_BarvoOnline .space_div .gray_div {
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 1365px;
+  height: 100%;
+}
+section#section_BarvoOnline .container#feature {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 1365px;
+  height: 845px;
+  background-image: url(https://jyun886.github.io/images/section_featured_bravo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section#section_BarvoOnline .orange_div {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  height: 306px;
+  width: 100%;
+  background-color: #fc4513;
+}
+section#section_BarvoOnline .gray_div {
+  z-index: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 1365px;
+  height: 223px;
+  background-color: #382f2f;
+}
+
+section#section_08webBanner {
+  height: 1850px;
+  padding: 0;
+  background-image: url(https://jyun886.github.io/images/bg_snake.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section#section_08webBanner .space1_div {
+  height: 127px;
+}
+section#section_08webBanner .space2_div {
+  background-image: url(https://jyun886.github.io/images/kouhao_03.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 261px;
+}
+section#section_08webBanner .container#webbanner1 {
+  position: relative;
+  width: 1335px;
+  height: 735px;
+  background-image: url(https://jyun886.github.io/images/section_workwebbanner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-left: -438px;
+  margin-top: 214px;
+  width: 456px;
+  height: 290px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn1_div {
+  margin-bottom: 14px;
+  border-radius: 20px;
+  width: 100%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn2_div {
+  margin-bottom: 14px;
+  border-radius: 20px;
+  width: 100%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn3_div {
+  float: left;
+  margin-bottom: 14px;
+  border-radius: 20px;
+  width: 49%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn4_div {
+  margin-bottom: 14px;
+  float: left;
+  margin-left: 6px;
+  border-radius: 20px;
+  width: 49%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn5_div {
+  float: left;
+  margin-bottom: 14px;
+  border-radius: 20px;
+  width: 49%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn6_div {
+  margin-bottom: 14px;
+  float: left;
+  margin-left: 6px;
+  border-radius: 20px;
+  width: 49%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn7_div {
+  float: left;
+  margin-bottom: 14px;
+  border-radius: 20px;
+  width: 49%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn8_div {
+  margin-bottom: 14px;
+  float: left;
+  margin-left: 6px;
+  border-radius: 20px;
+  width: 49%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .btn_grop .btn9_div {
+  float: left;
+  margin-bottom: 14px;
+  border-radius: 20px;
+  width: 49%;
+  height: 35px;
+}
+section#section_08webBanner .container#webbanner1 .web_viewer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 6px solid #000;
+  border-radius: 6px;
+  width: 596px;
+  height: 380px;
+  margin-left: 210px;
+  margin-top: 121px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  z-index: 1;
+  overflow: hidden;
+}
+section#section_08webBanner .container#webbanner1 .web_viewer img {
+  position: absolute;
+}
+section#section_08webBanner .space3_div {
+  height: 142px;
+}
+section#section_08webBanner .container#webbanner2 {
+  position: relative;
+}
+section#section_08webBanner .container#webbanner2 .item_single {
+  margin-top: 65px;
+  width: 300px;
+  height: 300px;
+}
+section#section_08webBanner .container#webbanner2 .item_icon1 {
+  background: url(https://jyun886.github.io/images/Play.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08webBanner .container#webbanner2 .animate1_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 140px;
+  height: 321px;
+  margin-top: 56px;
+  margin-left: 304px;
+  background-image: url(https://media.giphy.com/media/l0HU7SrgiHEIDhdZu/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 140px 321px;
+}
+section#section_08webBanner .container#webbanner2 .animate2_div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 140px;
+  height: 321px;
+  margin-top: 56px;
+  margin-left: 491px;
+  background-image: url(https://media.giphy.com/media/l49JSs5djcQHfk18s/giphy.gif);
+  background-repeat: no-repeat;
+  background-size: 140px 321px;
+}
+section#section_08webBanner .container#webbanner2 .background_img {
+  margin-left: -150px;
+  width: 1335px;
+  height: 540px;
+  background-image: url(https://jyun886.github.io/images/section_workwebbanner2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section#section_08webBanner .wbb_navmenu {
+  position: absolute;
+  margin-left: -85px;
+  margin-top: 110px;
+}
+
+section#section_08web {
+  height: 1200px;
+  padding: 0;
+  margin-top: -3px;
+  margin-left: -12px;
+  overflow: hidden;
+  background-image: url(https://jyun886.github.io/images/bg_snake.svg);
+  background-repeat: no-repeat;
+  background-position: 97.5% 50%;
+}
+section#section_08web .space_div {
+  height: 200px;
+  width: 100%;
+}
+section#section_08web .container#web {
+  position: relative;
+  padding: 0;
+  width: 1021px;
+  height: 838px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+  background-image: url(https://jyun886.github.io/images/section_workweb.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+section#section_08web .web_viewer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 3px solid #fff;
+  width: 480px;
+  height: 620px;
+  margin-left: -219px;
+  margin-top: 34px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  z-index: 1;
+}
+section#section_08web .web_viewer img {
+  position: absolute;
+}
+section#section_08web .wbb_navmenu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-left: 325px;
+  margin-top: -60px;
+}
+section#section_08web .item_icon1 {
+  background: url(https://jyun886.github.io/images/web_b01.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon2 {
+  background: url(https://jyun886.github.io/images/web_b02.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon3 {
+  background: url(https://jyun886.github.io/images/web_b03.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon4 {
+  background: url(https://jyun886.github.io/images/web_b04.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon5 {
+  background: url(https://jyun886.github.io/images/web_b05.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon6 {
+  background: url(https://jyun886.github.io/images/web_b06.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon7 {
+  background: url(https://jyun886.github.io/images/web_b07.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon8 {
+  background: url(https://jyun886.github.io/images/web_b08.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon9 {
+  background: url(https://jyun886.github.io/images/web_b09.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon10 {
+  background: url(https://jyun886.github.io/images/web_b10.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon11 {
+  background: url(https://jyun886.github.io/images/web_b11.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon12 {
+  background: url(https://jyun886.github.io/images/web_b12.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon13 {
+  background: url(https://jyun886.github.io/images/web_b13.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon14 {
+  background: url(https://jyun886.github.io/images/web_b14.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon15 {
+  background: url(https://jyun886.github.io/images/web_b16.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon16 {
+  background: url(https://jyun886.github.io/images/web_b17.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon17 {
+  background: url(https://jyun886.github.io/images/web_b18.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+section#section_08web .item_icon18 {
+  background: url(https://jyun886.github.io/images/web_b15.jpg) 50% 50% no-repeat;
+  background-size: 110%;
+}
+
+.menu_css {
+  width: 365px;
+  height: 500px;
+}
+
+.item {
+  float: left;
+  width: 92px;
+  height: 102px;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background: whitesmoke;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: #000;
+  font-weight: normal;
+}
+
+.window_viewer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+input {
+  display: none;
+}
+
+.cont, .cont1, .cont2, .cont3, .cont4, .cont5, .cont6, .cont7, .cont8, .cont9, .cont10, .cont11, .cont12, .cont14, .cont15, .cont16, .cont17, .cont18, .cont19, .cont20, .cont21, .cont22, .cont23, .cont24, .cont25, .cont26, .cont27, .cont28 {
+  display: none;
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.viwer_images img {
+  margin-top: -2px;
+  margin-left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+#slider_1st:checked ~ .window_viewer .cont {
+  display: inline-block;
+}
+
+#slider_2nd:checked ~ .window_viewer .cont1 {
+  display: inline-block;
+}
+
+#slider_3th:checked ~ .window_viewer .cont2 {
+  display: inline-block;
+}
+
+#slider_4th:checked ~ .window_viewer .cont3 {
+  display: inline-block;
+}
+
+#slider_5th:checked ~ .window_viewer .cont4 {
+  display: inline-block;
+}
+
+#slider_6th:checked ~ .window_viewer .cont5 {
+  display: inline-block;
+}
+
+#slider_7th:checked ~ .window_viewer .cont6 {
+  display: inline-block;
+}
+
+#slider_8th:checked ~ .window_viewer .cont7 {
+  display: inline-block;
+}
+
+#slider_9th:checked ~ .window_viewer .cont8 {
+  display: inline-block;
+}
+
+#slider_10:checked ~ .window_viewer .cont9 {
+  display: inline-block;
+}
+
+#slider_11:checked ~ .window_viewer .cont10 {
+  display: inline-block;
+}
+
+#slider_12:checked ~ .window_viewer .cont11 {
+  display: inline-block;
+}
+
+#slider_13:checked ~ .window_viewer .cont12 {
+  display: inline-block;
+}
+
+#slider_14:checked ~ .window_viewer .cont13 {
+  display: inline-block;
+}
+
+#slider_15:checked ~ .window_viewer .cont14 {
+  display: inline-block;
+}
+
+#slider_16:checked ~ .window_viewer .cont15 {
+  display: inline-block;
+}
+
+#slider_17:checked ~ .window_viewer .cont16 {
+  display: inline-block;
+}
+
+#slider_18:checked ~ .window_viewer .cont17 {
+  display: inline-block;
+}
+
+#slider_19:checked ~ .window_viewer .cont18 {
+  display: inline-block;
+}
+
+#slider_20:checked ~ .window_viewer .cont19 {
+  display: inline-block;
+}
+
+#slider_21:checked ~ .window_viewer .cont20 {
+  display: inline-block;
+}
+
+#slider_22:checked ~ .window_viewer .cont21 {
+  display: inline-block;
+}
+
+#slider_23:checked ~ .window_viewer .cont22 {
+  display: inline-block;
+}
+
+#slider_24:checked ~ .window_viewer .cont23 {
+  display: inline-block;
+}
+
+#slider_25:checked ~ .window_viewer .cont24 {
+  display: inline-block;
+}
+
+#slider_26:checked ~ .window_viewer .cont25 {
+  display: inline-block;
+}
+
+#slider_27:checked ~ .window_viewer .cont26 {
+  display: inline-block;
+}
+
+.bottom.text {
+  width: 100%;
+  position: absolute;
+  color: #000;
+  bottom: 0px;
+  background-color: #fff;
+  text-align: center;
+}

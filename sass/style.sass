@@ -1,0 +1,668 @@
+//顏色定義
+$color_black: #111820
+$color_blue: #282f44
+$color_brown: #fc4513
+$color_yellow: #f5d061
+$color_white: #ececec
+//-------------------------------------
+//改變預設字型
+*
+  font-family: 'Oswald', 'Noto Sans TC'
+//-------------------------------------
+//一些常用的mixin
+@mixin ab_center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+
+@mixin ab_widthcenter
+  left: 50%
+  transform: translate(-50%)
+@mixin size($w,$h)
+  width: $w
+  height: $h
+  
+  
+//-------------------------------------
+//共用mixin
+
+//-------------------------------------
+html,body
+  overflow-x: hidden
+  // overflow-y: hidden
+  font-size: 16px
+  background-image: url(https://jyun886.github.io/test/bg_patten_01.png)
+//首頁
+header
+  position: relative
+  background-color: $color_black
+  text-align: center
+  height: 926px
+  background-image: url(https://jyun886.github.io/test/bg_patten_01.png)
+  .Logoicon
+    +ab_center
+    width: 80%
+    max-width: 250px
+    padding: 250px 0px
+    
+  //底部邊界
+  .marginbottom
+    position: relative
+    // position: absolute
+    height: 885px
+    bottom: -50px
+    right: 810px
+    z-index: 0
+  .explore
+    +ab_center
+    font-size: 16px
+    color: $color_yellow
+    top: 75%
+    opacity: 0
+    transition: 0.5s
+    &:after
+      display: block
+      content: "v"
+      transform: scaleX(1.2) scaleY(0.5)
+    &.at_top
+      opacity: 1
+//-------------------------------------
+//導覽列
+nav.navbar
+  transition: 0.5s
+  a
+    transition: 0.5s
+//--導覽列在上方時透明
+nav.navbar.at_top
+  background-color: transparent
+  a, a:visited
+    color: white
+//-------------------------------------
+//區域的共同設定
+section
+  padding: 60px
+  position: relative
+  
+//-------------------------------------
+//Section 簡介
+section#section_about
+  height: 2620px
+  background-color: $color_brown
+  background-repeat: no-repeat
+  background-position: top center
+  overflow: hidden
+  .container#about_pic1
+    +ab_center
+    z-index: 2
+    width: 608px
+    height: 426px
+    margin-top: -760px
+    margin-left: 280px
+  .container#about_pic2
+    +ab_center
+    z-index: 2
+    width: 582px
+    height: 206px
+    margin-top: 460px
+    margin-left: 180px
+  .container#about_pic3
+    +ab_center
+    z-index: 2
+    width: 562px
+    height: 394px
+    margin-top: 1020px
+    margin-left: 335px
+    
+  .container#about_main
+    +ab_center
+    z-index: 2
+    width: 1264px
+    height: 2333px
+    margin-left: -20px
+    margin-top: -45px
+  // .container#about
+    +ab_center
+    width: 2171px
+    height: 2535px
+    background-image: url(https://jyun886.github.io/images/section_about2.png)
+    background-repeat: no-repeat
+    background-position: center center
+  .container_rotate
+    +ab_center
+    padding: 0
+    margin: 0
+    width: 946px
+    height: 1300px
+    z-index: 0
+    // border: 1px solid #fff
+    .a_c_grop
+      transform: rotate(-18deg) 
+      
+      .bg_design_01
+        position: absolute
+        top: -500px
+        width: 350px
+        left: 690px
+      .bg_design_02
+        position: absolute
+        top: 470px
+        width: 850px
+        left: 390px
+      .bg_design_03
+        position: absolute
+        top: -400px
+        width: 350px
+        right: -460px
+      .bg_design_04
+        position: absolute
+        top: 420px
+        width: 90px
+        left: -325px
+      .bg_l_01
+        opacity: 0.4
+        position: absolute
+        top: -110px
+        left: -650px
+        width: 1800px
+      .bg_l_02
+        opacity: 0.4
+        position: absolute
+        top: 70px
+        left: -610px
+        width: 1650px
+//- ----------------------------------------------
+//老子專案1    
+section#section_08online
+  position: relative
+  height: 1210px
+  // background-color: #111
+  padding: 0  
+  // background-image: url(https://jyun886.github.io/images/bg_snake.svg)
+  background-repeat: no-repeat
+  background-position: center center
+  .space_div
+    // border: 1px solid #fff
+    height: 294px
+    background-image: url(https://jyun886.github.io/images/kouhao_02.svg)
+    background-repeat: no-repeat
+    background-position: center center
+  .container#feature
+    z-index: 1
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    width: 1365px
+    height: 921px
+    background-image: url(https://jyun886.github.io/images/section_featured_08.png)
+    background-repeat: no-repeat
+    background-position: center center
+  .bottom_div
+    position: absolute
+    z-index: 0
+    background-color: rgba(220,220,200,0.05)
+    left: 50%
+    transform: translate(-50%)
+    top: 450px
+    margin-left: 230px
+    width: 803px
+    height: 363px
+    border-radius: 20px
+  .orange_div 
+    z-index: 0
+    position: absolute
+    bottom: 42px
+    height: 306px
+    width: 100%
+    background-color: $color_brown
+    
+    
+//- ----------------------------------------------
+//角子專案1
+section#section_BarvoOnline
+  margin-top: -42px
+  height: 1068px
+  // background-covlor: 382f2f
+  // border: 1px solid #000
+  padding: 0  
+  .space_div
+    
+    .gray_div
+      left: 50%
+      transform: translate(-50%)
+      width: 1365px
+      height: 100%
+    // border: 1px solid #fff
+    height: 194px
+  .container#feature
+    z-index: 2
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    width: 1365px
+    height: 845px
+    background-image: url(https://jyun886.github.io/images/section_featured_bravo.png)
+    background-repeat: no-repeat
+    background-position: center center
+  .orange_div 
+    z-index: 1
+    position: absolute
+    bottom: 0
+    height: 306px
+    width: 100%
+    background-color: $color_brown
+  .gray_div
+    z-index: 0
+    position: absolute
+    left: 50%
+    transform: translate(-50%)
+    width: 1365px
+    height: 223px
+    background-color: #382f2f
+//- ----------------------------------------------
+//老子官網Banner
+section#section_08webBanner
+  height: 1850px
+  padding: 0  
+  background-image: url(https://jyun886.github.io/images/bg_snake.svg)
+  background-repeat: no-repeat
+  background-position: center center
+  .space1_div
+    // border: 1px solid #fff
+    height: 127px
+  .space2_div
+    background-image: url(https://jyun886.github.io/images/kouhao_03.svg)
+    background-repeat: no-repeat
+    background-position: center center
+    // border: 1px solid #fff
+    height: 261px
+  .container#webbanner1
+    position: relative
+    width: 1335px
+    height: 735px
+    background-image: url(https://jyun886.github.io/images/section_workwebbanner.png)
+    background-repeat: no-repeat
+    background-position: center center
+    .btn_grop
+      +ab_center
+      margin-left: -438px
+      margin-top: 214px
+      // border: 1px solid #000
+      width: 456px
+      height: 290px
+      .btn1_div
+        margin-bottom: 14px
+        // background-color: #fff
+        border-radius: 20px
+        width: 100%
+        height: 35px
+      .btn2_div
+        margin-bottom: 14px
+        // background-color: #fff
+        border-radius: 20px
+        width: 100%
+        height: 35px
+      .btn3_div
+        float: left
+        margin-bottom: 14px
+        // background-color: #fff
+        border-radius: 20px
+        width: 49%
+        height: 35px
+      .btn4_div
+        margin-bottom: 14px
+        float: left
+        margin-left: 6px
+        // background-color: #fff
+        border-radius: 20px
+        width: 49%
+        height: 35px
+      .btn5_div
+        float: left
+        margin-bottom: 14px
+        // background-color: #fff
+        border-radius: 20px
+        width: 49%
+        height: 35px
+      .btn6_div
+        margin-bottom: 14px
+        float: left
+        margin-left: 6px
+        // background-color: #fff
+        border-radius: 20px
+        width: 49%
+        height: 35px
+      .btn7_div
+        float: left
+        margin-bottom: 14px
+        // background-color: #fff
+        border-radius: 20px
+        width: 49%
+        height: 35px
+      .btn8_div
+        margin-bottom: 14px
+        float: left
+        margin-left: 6px
+        // background-color: #fff
+        border-radius: 20px
+        width: 49%
+        height: 35px
+      .btn9_div
+        float: left
+        margin-bottom: 14px
+        // background-color: #fff
+        border-radius: 20px
+        width: 49%
+        height: 35px
+
+    .web_viewer   
+      +ab_center
+      border: 6px solid #000
+      border-radius: 6px
+      width: 596px
+      height: 380px
+      margin-left: 210px
+      margin-top: 121px
+      -webkit-user-select: none
+      -moz-user-select: none
+      -o-user-select: none
+      user-select: none
+      z-index: 1
+      overflow: hidden
+      img
+        position: absolute
+  .space3_div
+    // border: 1px solid #fff
+    height: 142px
+  .container#webbanner2
+    position: relative
+    .item_single
+      margin-top: 65px
+      width: 300px
+      height: 300px
+    .item_icon1
+      background: url(https://jyun886.github.io/images/Play.jpg) 50% 50% no-repeat
+      background-size: 110%
+    .animate1_div
+      +ab_center
+      width: 140px
+      height: 321px
+      margin-top: 56px
+      margin-left: 304px
+      // background-color: rgba(255,255,255,0.5)
+      background-image: url(https://media.giphy.com/media/l0HU7SrgiHEIDhdZu/giphy.gif)
+      background-repeat: no-repeat
+      background-size: 140px 321px
+    .animate2_div
+      +ab_center
+      width: 140px
+      height: 321px
+      margin-top: 56px
+      margin-left: 491px
+      // background-color: rgba(255,255,255,0.5)
+      background-image: url(https://media.giphy.com/media/l49JSs5djcQHfk18s/giphy.gif)
+      background-repeat: no-repeat
+      background-size: 140px 321px
+    .background_img
+      margin-left: -150px
+      width: 1335px
+      height: 540px
+      background-image: url(https://jyun886.github.io/images/section_workwebbanner2.png)
+      background-repeat: no-repeat
+      background-position: center center
+    
+  .wbb_navmenu
+    position: absolute
+    margin-left: -85px
+    margin-top: 110px
+      
+//- ----------------------------------------------
+//老子web
+section#section_08web
+  height: 1200px
+  padding: 0  
+  margin-top: -3px
+  margin-left: -12px
+  overflow: hidden
+  background-image: url(https://jyun886.github.io/images/bg_snake.svg)
+  background-repeat: no-repeat
+  background-position: 97.5% 50%
+  .space_div
+    // border: 1px solid #fff
+    height: 200px
+    width: 100%
+  
+  .container#web
+    position: relative
+    padding: 0
+    width: 1021px
+    height: 838px
+    width: 100%
+    overflow: hidden
+    z-index: 2
+    background-image: url(https://jyun886.github.io/images/section_workweb.png)
+    background-repeat: no-repeat
+    background-position: center center
+  .web_viewer   
+    +ab_center
+    border: 3px solid #fff
+    width: 480px
+    height: 620px
+    margin-left: -219px
+    margin-top: 34px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -o-user-select: none
+    user-select: none
+    z-index: 1
+    img
+      position: absolute
+  .wbb_navmenu
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%)
+    margin-left: 325px
+    margin-top: -60px
+  .item_icon1
+    
+    background: url(https://jyun886.github.io/images/web_b01.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon2
+    background: url(https://jyun886.github.io/images/web_b02.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon3
+    background: url(https://jyun886.github.io/images/web_b03.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon4
+    background: url(https://jyun886.github.io/images/web_b04.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon5
+    background: url(https://jyun886.github.io/images/web_b05.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon6
+    background: url(https://jyun886.github.io/images/web_b06.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon7
+    background: url(https://jyun886.github.io/images/web_b07.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon8
+    background: url(https://jyun886.github.io/images/web_b08.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon9
+    background: url(https://jyun886.github.io/images/web_b09.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon10
+    background: url(https://jyun886.github.io/images/web_b10.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon11
+    background: url(https://jyun886.github.io/images/web_b11.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon12
+    background: url(https://jyun886.github.io/images/web_b12.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon13
+    background: url(https://jyun886.github.io/images/web_b13.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon14
+    background: url(https://jyun886.github.io/images/web_b14.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon15
+    background: url(https://jyun886.github.io/images/web_b16.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon16
+    background: url(https://jyun886.github.io/images/web_b17.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon17
+    background: url(https://jyun886.github.io/images/web_b18.jpg) 50% 50% no-repeat
+    background-size: 110%
+  .item_icon18
+    background: url(https://jyun886.github.io/images/web_b15.jpg) 50% 50% no-repeat
+    background-size: 110%
+
+    
+.menu_css
+  width: 365px
+  height: 500px
+.item
+  float: left
+  width: 92px
+  height: 102px
+  padding: 0
+  margin-left: 20px
+  margin-top: 20px
+  border-radius: 10px
+  background: whitesmoke
+  position: relative
+  overflow: hidden
+  cursor: pointer
+  border: 2px solid rgba(white,1)
+  box-sizing: border-box
+  user-select: none
+  text-align: center
+label
+  box-sizing: border-box
+  display: inline-block
+  float: left
+  width: 100%
+  height: 100%
+  cursor: pointer  
+  color: #000
+  font-weight: normal
+
+
+    
+.window_viewer
+  +ab_center
+  width: 100%
+  height: 100%
+  overflow: hidden
+input
+  display: none
+.cont, .cont1, .cont2, .cont3, .cont4, .cont5, .cont6, .cont7, .cont8, .cont9, .cont10, .cont11, .cont12, .cont14, .cont15, .cont16, .cont17, .cont18, .cont19, .cont20, .cont21, .cont22, .cont23, .cont24, .cont25, .cont26, .cont27, .cont28,
+  display: none
+  float: left
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+.viwer_images
+  img
+    margin-top: -2px
+    margin-left: 0
+    width: 100%
+    height: 100%
+    display: inline-block
+    float: left
+
+#slider_1st:checked ~ .window_viewer
+  .cont
+    display: inline-block
+#slider_2nd:checked ~ .window_viewer
+  .cont1
+    display: inline-block  
+#slider_3th:checked ~ .window_viewer
+  .cont2
+    display: inline-block  
+#slider_4th:checked ~ .window_viewer
+  .cont3
+    display: inline-block  
+#slider_5th:checked ~ .window_viewer
+  .cont4
+    display: inline-block  
+#slider_6th:checked ~ .window_viewer
+  .cont5
+    display: inline-block  
+#slider_7th:checked ~ .window_viewer
+  .cont6
+    display: inline-block  
+#slider_8th:checked ~ .window_viewer
+  .cont7
+    display: inline-block  
+#slider_9th:checked ~ .window_viewer
+  .cont8
+    display: inline-block  
+#slider_10:checked ~ .window_viewer
+  .cont9
+    display: inline-block  
+#slider_11:checked ~ .window_viewer
+  .cont10
+    display: inline-block 
+#slider_12:checked ~ .window_viewer
+  .cont11
+    display: inline-block 
+#slider_13:checked ~ .window_viewer
+  .cont12
+    display: inline-block 
+#slider_14:checked ~ .window_viewer
+  .cont13
+    display: inline-block 
+#slider_15:checked ~ .window_viewer
+  .cont14
+    display: inline-block 
+#slider_16:checked ~ .window_viewer
+  .cont15
+    display: inline-block 
+#slider_17:checked ~ .window_viewer
+  .cont16
+    display: inline-block 
+#slider_18:checked ~ .window_viewer
+  .cont17
+    display: inline-block 
+#slider_19:checked ~ .window_viewer
+  .cont18
+    display: inline-block 
+#slider_20:checked ~ .window_viewer
+  .cont19
+    display: inline-block 
+#slider_21:checked ~ .window_viewer
+  .cont20
+    display: inline-block 
+#slider_22:checked ~ .window_viewer
+  .cont21
+    display: inline-block 
+#slider_23:checked ~ .window_viewer
+  .cont22
+    display: inline-block 
+#slider_24:checked ~ .window_viewer
+  .cont23
+    display: inline-block 
+#slider_25:checked ~ .window_viewer
+  .cont24
+    display: inline-block 
+#slider_26:checked ~ .window_viewer
+  .cont25
+    display: inline-block 
+#slider_27:checked ~ .window_viewer
+  .cont26
+    display: inline-block 
+    
+
+
+.bottom.text
+  width: 100% 
+  position: absolute
+  color: #000
+  bottom: 0px
+  background-color: #fff
+  text-align: center
